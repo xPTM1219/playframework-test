@@ -5,6 +5,9 @@
 # Idea
 .idea/
 
+# VSCode
+.vscode/
+
 # SBT
 .bsp/
 
@@ -27,3 +30,8 @@ target/
 .classpath
 .project
 .settings
+
+# Metals plugin
+.metals/
+project/.bloop/
+project/project/

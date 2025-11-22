@@ -1,11 +1,11 @@
 
 name := "playframework-test"
 
-val akkaVersion = "2.8.8" //2.5.32 | 2.6.21 | 2.8.8
+val akkaVersion = "2.5.32" //2.5.32 | 2.6.21 | 2.8.8
 val akkaDiagnosticsVersion = "2.0.1"
 val logbackClassicVersion = "1.5.21"
 val scalaTestVersion = "3.2.19"
-val playVersion = "2.7.9"
+val playVersion = "2.5.19"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
@@ -17,6 +17,9 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % logbackClassicVersion,
   "org.slf4j" % "log4j-over-slf4j" % "2.0.17",
   "com.lightbend.akka" %% "akka-diagnostics" % akkaDiagnosticsVersion,
+  "ch.epfl.scala" % "sbt-bloop_2.12_1.0" % "2.0.17",
+  "com.typesafe.play" % "sbt-twirl_2.12_1.0" % "1.6.10",
+  "com.typesafe.play" % "twirl-api_2.12" % "1.6.10", //2.0.9
 
 //  Testing dependencies
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
