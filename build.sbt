@@ -5,7 +5,8 @@ val akkaVersion = "2.5.32" //2.5.32 | 2.6.21 | 2.8.8
 val akkaDiagnosticsVersion = "2.0.1"
 val logbackClassicVersion = "1.5.21"
 val scalaTestVersion = "3.2.19"
-val playVersion = "2.5.19"
+val playVersion = "2.6.25"
+val twirlVersion = "1.5.2"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
@@ -18,8 +19,9 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "log4j-over-slf4j" % "2.0.17",
   "com.lightbend.akka" %% "akka-diagnostics" % akkaDiagnosticsVersion,
   "ch.epfl.scala" % "sbt-bloop_2.12_1.0" % "2.0.17",
-  "com.typesafe.play" % "sbt-twirl_2.12_1.0" % "1.6.10",
-  "com.typesafe.play" % "twirl-api_2.12" % "1.6.10", //2.0.9
+  // "com.typesafe.play" % "sbt-twirl_2.12_1.0" % twirlVersion,
+  "com.typesafe.play" % "twirl-api_2.12" % twirlVersion, //2.0.9
+  // "com.github.sbt" % "sbt-native-packager2.12_1.0" % "1.11.4"),
 
 //  Testing dependencies
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
