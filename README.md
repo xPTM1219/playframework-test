@@ -48,6 +48,8 @@ I'm thinking in downloading and adding the artifacts manually.
 I also updated the pom file in order to pull the correct one.
 `vim repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.12/sbt_1.0/2.7.9/ivys/ivy.xml`
 
+Posted solution to [Stackoverflow](https://stackoverflow.com/questions/79828037/sbt-native-packager-not-found-when-compiling)
+
 ## Resources
 
 * [Play v2.5.19 docs](https://www.playframework.com/documentation/2.5.x/Home)
