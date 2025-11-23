@@ -1,0 +1,8 @@
+[info] welcome to sbt 1.9.9 (Ubuntu Java 17.0.16)
+[info] loading settings for project playframework-test-build-build-build from metals.sbt ...
+[info] loading project definition from /home/xptm/Programming/playframework-test/project/project/project
+
+[warn] Canceling execution...
+[error] Cancelled: loadp
+[error] Use 'last' for the full log.
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
