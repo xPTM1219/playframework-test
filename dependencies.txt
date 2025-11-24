@@ -1,8 +1,709 @@
 [info] welcome to sbt 1.9.9 (Ubuntu Java 17.0.16)
 [info] loading settings for project playframework-test-build-build-build from metals.sbt ...
 [info] loading project definition from /home/xptm/Programming/playframework-test/project/project/project
-
-[warn] Canceling execution...
-[error] Cancelled: loadp
-[error] Use 'last' for the full log.
-[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[info] loading settings for project playframework-test-build-build from metals.sbt ...
+[info] loading project definition from /home/xptm/Programming/playframework-test/project/project
+[success] Generated .bloop/playframework-test-build-build.json
+[success] Total time: 1 s, completed Nov 24, 2025, 1:02:37 PM
+[info] loading settings for project playframework-test-build from metals.sbt,plugins.sbt ...
+[info] loading project definition from /home/xptm/Programming/playframework-test/project
+[success] Generated .bloop/playframework-test-build.json
+[success] Total time: 0 s, completed Nov 24, 2025, 1:02:38 PM
+[info] loading settings for project root from build.sbt ...
+[info]   __              __
+[info]   \ \     ____   / /____ _ __  __
+[info]    \ \   / __ \ / // __ `// / / /
+[info]    / /  / /_/ // // /_/ // /_/ /
+[info]   /_/  / .___//_/ \__,_/ \__, /
+[info]       /_/               /____/
+[info] 
+[info] Version 2.9.9 running Java 17.0.16
+[info] 
+[info] Play is run entirely by the community. Please consider contributing and/or donating:
+[info] https://www.playframework.com/sponsors
+[info] 
+[info] io.github.java-diff-utils:java-diff-utils:4.16
+[info] org.jline:jline:3.29.0
+[info] playframework-test:playframework-test_2.13:1.0.0-SNAPSHOT [S]
+[info]   +-ch.epfl.scala:sbt-bloop_2.12_1.0:2.0.17
+[info]   | +-ch.epfl.scala:bloop-config_2.12:2.3.3 [S]
+[info]   |   +-com.github.plokhotnyuk.jsoniter-scala:jsoniter-scala-core_2.12:2.13.5...
+[info]   |   +-com.lihaoyi:unroll-annotation_2.12:0.1.12 [S]
+[info]   |   
+[info]   +-ch.qos.logback:logback-classic:1.5.18
+[info]   +-com.lightbend.akka:akka-diagnostics_2.13:2.0.1 [S]
+[info]   | +-com.typesafe.akka:akka-actor_2.13:2.7.0 (evicted by: 2.7.1)
+[info]   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | +-com.typesafe:config:1.4.5
+[info]   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | 
+[info]   | +-org.apache.commons:commons-text:1.10.0
+[info]   |   +-org.apache.commons:commons-lang3:3.12.0
+[info]   |   
+[info]   +-com.typesafe.akka:akka-actor-typed_2.13:2.7.1 [S]
+[info]   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | +-com.typesafe:config:1.4.5
+[info]   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | 
+[info]   | +-com.typesafe.akka:akka-slf4j_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | 
+[info]   | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | 
+[info]   | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | +-org.slf4j:slf4j-api:2.0.17
+[info]   | 
+[info]   +-com.typesafe.akka:akka-cluster-typed_2.13:2.7.1 [S]
+[info]   | +-com.typesafe.akka:akka-actor-typed_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-slf4j_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | 
+[info]   | | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | 
+[info]   | +-com.typesafe.akka:akka-cluster-tools_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe.akka:akka-cluster_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-coordination_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | |   +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | |   +-com.typesafe:config:1.4.5
+[info]   | | | |   +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | |   
+[info]   | | | +-com.typesafe.akka:akka-remote_2.13:2.7.1 [S]
+[info]   | | |   +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | |   | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | |   | +-com.typesafe:config:1.4.5
+[info]   | | |   | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | |   | 
+[info]   | | |   +-com.typesafe.akka:akka-pki_2.13:2.7.1 [S]
+[info]   | | |   | +-com.hierynomus:asn-one:0.6.0
+[info]   | | |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | |   | | +-com.typesafe:config:1.4.5
+[info]   | | |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | |   | | 
+[info]   | | |   | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | |   | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | |   | 
+[info]   | | |   +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | | |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | |   | | +-com.typesafe:config:1.4.5
+[info]   | | |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | |   | | 
+[info]   | | |   | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | | |   | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | | |   | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | |   | | +-com.typesafe:config:1.4.5
+[info]   | | |   | | 
+[info]   | | |   | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | |   | 
+[info]   | | |   +-org.agrona:agrona:1.16.0
+[info]   | | |   
+[info]   | | +-com.typesafe.akka:akka-coordination_2.13:2.7.1 [S]
+[info]   | |   +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | |     +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |     +-com.typesafe:config:1.4.5
+[info]   | |     +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | |     
+[info]   | +-com.typesafe.akka:akka-cluster_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe.akka:akka-coordination_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | |   +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | |   +-com.typesafe:config:1.4.5
+[info]   | | |   +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | |   
+[info]   | | +-com.typesafe.akka:akka-remote_2.13:2.7.1 [S]
+[info]   | |   +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | |   | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | +-com.typesafe:config:1.4.5
+[info]   | |   | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | |   | 
+[info]   | |   +-com.typesafe.akka:akka-pki_2.13:2.7.1 [S]
+[info]   | |   | +-com.hierynomus:asn-one:0.6.0
+[info]   | |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | | +-com.typesafe:config:1.4.5
+[info]   | |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | |   | | 
+[info]   | |   | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | |   | +-org.slf4j:slf4j-api:2.0.17
+[info]   | |   | 
+[info]   | |   +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | | +-com.typesafe:config:1.4.5
+[info]   | |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | |   | | 
+[info]   | |   | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | |   | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | |   | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | | +-com.typesafe:config:1.4.5
+[info]   | |   | | 
+[info]   | |   | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | |   | 
+[info]   | |   +-org.agrona:agrona:1.16.0
+[info]   | |   
+[info]   | +-com.typesafe.akka:akka-distributed-data_2.13:2.7.1 [S]
+[info]   |   +-com.typesafe.akka:akka-cluster_2.13:2.7.1 [S]
+[info]   |   | +-com.typesafe.akka:akka-coordination_2.13:2.7.1 [S]
+[info]   |   | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   |   | |   +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   | |   +-com.typesafe:config:1.4.5
+[info]   |   | |   +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   |   | |   
+[info]   |   | +-com.typesafe.akka:akka-remote_2.13:2.7.1 [S]
+[info]   |   |   +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   |   |   | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   |   | +-com.typesafe:config:1.4.5
+[info]   |   |   | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   |   |   | 
+[info]   |   |   +-com.typesafe.akka:akka-pki_2.13:2.7.1 [S]
+[info]   |   |   | +-com.hierynomus:asn-one:0.6.0
+[info]   |   |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   |   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   |   | | +-com.typesafe:config:1.4.5
+[info]   |   |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   |   |   | | 
+[info]   |   |   | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   |   |   | +-org.slf4j:slf4j-api:2.0.17
+[info]   |   |   | 
+[info]   |   |   +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   |   |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   |   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   |   | | +-com.typesafe:config:1.4.5
+[info]   |   |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   |   |   | | 
+[info]   |   |   | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   |   |   | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   |   |   | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   |   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   |   | | +-com.typesafe:config:1.4.5
+[info]   |   |   | | 
+[info]   |   |   | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   |   |   | 
+[info]   |   |   +-org.agrona:agrona:1.16.0
+[info]   |   |   
+[info]   |   +-org.lmdbjava:lmdbjava:0.7.0
+[info]   |     +-com.github.jnr:jffi:1.2.18
+[info]   |     +-com.github.jnr:jnr-constants:0.9.12
+[info]   |     +-com.github.jnr:jnr-ffi:2.1.9
+[info]   |       +-com.github.jnr:jnr-a64asm:1.0.0
+[info]   |       +-com.github.jnr:jnr-x86asm:1.0.2
+[info]   |       +-org.ow2.asm:asm-analysis:5.0.3
+[info]   |       | +-org.ow2.asm:asm-tree:5.0.3
+[info]   |       |   +-org.ow2.asm:asm:5.0.3
+[info]   |       |   
+[info]   |       +-org.ow2.asm:asm-commons:5.0.3
+[info]   |       | +-org.ow2.asm:asm-tree:5.0.3
+[info]   |       |   +-org.ow2.asm:asm:5.0.3
+[info]   |       |   
+[info]   |       +-org.ow2.asm:asm-tree:5.0.3
+[info]   |       | +-org.ow2.asm:asm:5.0.3
+[info]   |       | 
+[info]   |       +-org.ow2.asm:asm-util:5.0.3
+[info]   |       | +-org.ow2.asm:asm-tree:5.0.3
+[info]   |       |   +-org.ow2.asm:asm:5.0.3
+[info]   |       |   
+[info]   |       +-org.ow2.asm:asm:5.0.3
+[info]   |       
+[info]   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.7.1 [S]
+[info]   | +-com.fasterxml.jackson.core:jackson-annotations:2.13.4 (evicted by: 2.14.3)
+[info]   | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | +-com.fasterxml.jackson.core:jackson-core:2.13.4 (evicted by: 2.14.3)
+[info]   | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | +-com.fasterxml.jackson.core:jackson-databind:2.13.4.2 (evicted by: 2.14.3)
+[info]   | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | 
+[info]   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.13.4 (evicted..
+[info]   | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   
+[info]   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.4 (evicted by:..
+[info]   | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   
+[info]   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.4 (evicted b..
+[info]   | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   
+[info]   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.4 (evic..
+[info]   | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | |   
+[info]   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.13.4 (evicted b..
+[info]   | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | 
+[info]   | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   | | 
+[info]   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | +-com.typesafe:config:1.4.5
+[info]   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | 
+[info]   | +-org.lz4:lz4-java:1.8.0
+[info]   | 
+[info]   +-com.typesafe.play:play-akka-http-server_2.13:2.9.9 [S]
+[info]   | +-com.typesafe.akka:akka-http-core_2.13:10.2.10 [S]
+[info]   | | +-com.typesafe.akka:akka-parsing_2.13:10.2.10 [S]
+[info]   | | 
+[info]   | +-com.typesafe.play:play-server_2.13:2.9.9 [S]
+[info]   | | +-com.typesafe.play:play_2.13:2.9.9
+[info]   | |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by..
+[info]   | |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | |   
+[info]   | +-com.typesafe.play:play-streams_2.13:2.9.9 [S]
+[info]   |   +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   | | +-com.typesafe:config:1.4.5
+[info]   |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   |   | | 
+[info]   |   | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   |   | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   |   | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   |   | | +-com.typesafe:config:1.4.5
+[info]   |   | | 
+[info]   |   | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   |   | 
+[info]   |   +-org.reactivestreams:reactive-streams:1.0.4
+[info]   |   
+[info]   +-com.typesafe.play:play-filters-helpers_2.13:2.9.9 [S]
+[info]   | +-com.typesafe.play:play_2.13:2.9.9
+[info]   |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: ..
+[info]   |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   
+[info]   +-com.typesafe.play:play-guice_2.13:2.7.9 [S]
+[info]   | +-com.google.inject.extensions:guice-assistedinject:4.2.2
+[info]   | | +-com.google.inject:guice:4.2.2
+[info]   | |   +-aopalliance:aopalliance:1.0
+[info]   | |   +-com.google.guava:guava:25.1-android (evicted by: 32.1.3-jre)
+[info]   | |   +-com.google.guava:guava:32.1.3-jre
+[info]   | |   | +-com.google.code.findbugs:jsr305:3.0.2
+[info]   | |   | +-com.google.errorprone:error_prone_annotations:2.21.1
+[info]   | |   | +-com.google.guava:failureaccess:1.0.1
+[info]   | |   | +-com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-w..
+[info]   | |   | +-com.google.j2objc:j2objc-annotations:2.8
+[info]   | |   | +-org.checkerframework:checker-qual:3.37.0
+[info]   | |   | 
+[info]   | |   +-javax.inject:javax.inject:1
+[info]   | |   
+[info]   | +-com.google.inject:guice:4.2.2
+[info]   | | +-aopalliance:aopalliance:1.0
+[info]   | | +-com.google.guava:guava:25.1-android (evicted by: 32.1.3-jre)
+[info]   | | +-com.google.guava:guava:32.1.3-jre
+[info]   | | | +-com.google.code.findbugs:jsr305:3.0.2
+[info]   | | | +-com.google.errorprone:error_prone_annotations:2.21.1
+[info]   | | | +-com.google.guava:failureaccess:1.0.1
+[info]   | | | +-com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-wit..
+[info]   | | | +-com.google.j2objc:j2objc-annotations:2.8
+[info]   | | | +-org.checkerframework:checker-qual:3.37.0
+[info]   | | | 
+[info]   | | +-javax.inject:javax.inject:1
+[info]   | | 
+[info]   | +-com.typesafe.play:play_2.13:2.7.9 [S] (evicted by: 2.9.9)
+[info]   | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | 
+[info]   | | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | |   
+[info]   | | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | |   
+[info]   | | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | |   
+[info]   | | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | |   
+[info]   | | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | 
+[info]   | | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   | | | 
+[info]   | | +-com.google.guava:guava:32.1.3-jre
+[info]   | | | +-com.google.code.findbugs:jsr305:3.0.2
+[info]   | | | +-com.google.errorprone:error_prone_annotations:2.21.1
+[info]   | | | +-com.google.guava:failureaccess:1.0.1
+[info]   | | | +-com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-wit..
+[info]   | | | +-com.google.j2objc:j2objc-annotations:2.8
+[info]   | | | +-org.checkerframework:checker-qual:3.37.0
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-actor-typed_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | 
+[info]   | | | +-com.typesafe.akka:akka-slf4j_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | | 
+[info]   | | | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | | 
+[info]   | | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-serialization-jackson_2.13:2.7.1 [S]
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.13.4 (evicted by: 2..
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.13.4 (evicted by: 2.14.3)
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.13.4.2 (evicted by: 2...
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | 
+[info]   | | | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.13.4 (evi..
+[info]   | | | +-com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.13.4 (evicted..
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.4 (evict..
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.4 (..
+[info]   | | | +-com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.13.4 (evict..
+[info]   | | | +-com.fasterxml.jackson.module:jackson-module-scala_2.13:2.14.3 [S]
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | | 
+[info]   | | | | +-com.thoughtworks.paranamer:paranamer:2.8
+[info]   | | | | 
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | 
+[info]   | | | +-org.lz4:lz4-java:1.8.0
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-slf4j_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | 
+[info]   | | | +-org.slf4j:slf4j-api:1.7.36 (evicted by: 2.0.17)
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-com.typesafe.play:play-build-link:2.9.9
+[info]   | | | +-com.typesafe.play:play-exceptions:2.9.9
+[info]   | | | 
+[info]   | | +-com.typesafe.play:play-configuration_2.13:2.9.9 [S]
+[info]   | | | +-com.typesafe.play:play-exceptions:2.9.9
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-com.typesafe.play:play-json_2.13:2.10.7 [S]
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | 
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.typesafe.play:play-functional_2.13:2.10.7 [S]
+[info]   | | | +-org.scala-lang:scala-reflect:2.13.17 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe.play:play-streams_2.13:2.9.9 [S]
+[info]   | | | +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | | | +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | | 
+[info]   | | | | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | | | | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | | | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | | 
+[info]   | | | | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | | | 
+[info]   | | | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | | 
+[info]   | | #-com.typesafe.play:play_2.13:2.7.9 [S] (evicted by: 2.9.9) (cycle)
+[info]   | | +-com.typesafe.play:twirl-api_2.13:1.6.10 [S]
+[info]   | | | +-org.scala-lang.modules:scala-xml_2.13:2.2.0 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | 
+[info]   | | +-io.jsonwebtoken:jjwt-api:0.11.5
+[info]   | | +-io.jsonwebtoken:jjwt-impl:0.11.5
+[info]   | | | +-io.jsonwebtoken:jjwt-api:0.11.5
+[info]   | | | 
+[info]   | | +-io.jsonwebtoken:jjwt-jackson:0.11.5
+[info]   | | | +-io.jsonwebtoken:jjwt-api:0.11.5
+[info]   | | | 
+[info]   | | +-javax.inject:javax.inject:1
+[info]   | | +-org.scala-lang.modules:scala-parser-combinators_2.13:1.1.2 [S]
+[info]   | | +-org.slf4j:jcl-over-slf4j:2.0.17
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-org.slf4j:jul-to-slf4j:2.0.17
+[info]   | | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | | 
+[info]   | | +-org.slf4j:slf4j-api:2.0.17
+[info]   | | 
+[info]   | +-com.typesafe.play:play_2.13:2.9.9
+[info]   |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: ..
+[info]   |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   
+[info]   +-com.typesafe.play:play-logback_2.13:2.9.9 [S]
+[info]   | +-ch.qos.logback:logback-classic:1.5.18
+[info]   | +-com.typesafe.play:play_2.13:2.9.9
+[info]   |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: ..
+[info]   |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   
+[info]   +-com.typesafe.play:play-server_2.13:2.9.9 [S]
+[info]   | +-com.typesafe.play:play_2.13:2.9.9
+[info]   |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: ..
+[info]   |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   
+[info]   +-com.typesafe.play:play-ws_2.13:2.9.9 [S]
+[info]   | +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | 
+[info]   | | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | 
+[info]   | +-com.typesafe.play:play-ws-standalone-json_2.13:2.2.12 [S]
+[info]   | | +-com.typesafe.play:play-json_2.13:2.10.7 [S]
+[info]   | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | 
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | | +-com.fasterxml.jackson.core:jackson-databind:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-annotations:2.14.3
+[info]   | | | |   +-com.fasterxml.jackson.core:jackson-core:2.14.3
+[info]   | | | |   
+[info]   | | | +-com.typesafe.play:play-functional_2.13:2.10.7 [S]
+[info]   | | | +-org.scala-lang:scala-reflect:2.13.17 [S]
+[info]   | | | 
+[info]   | | +-com.typesafe.play:play-ws-standalone_2.13:2.2.12 [S]
+[info]   | |   +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | |   +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | |   | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | | +-com.typesafe:config:1.4.5
+[info]   | |   | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | |   | | 
+[info]   | |   | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | |   | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | |   | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | |   | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | | +-com.typesafe:config:1.4.5
+[info]   | |   | | 
+[info]   | |   | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | |   | 
+[info]   | |   +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | |   | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | |   | +-com.typesafe:config:1.4.5
+[info]   | |   | 
+[info]   | |   +-javax.inject:javax.inject:1
+[info]   | |   
+[info]   | +-com.typesafe.play:play-ws-standalone-xml_2.13:2.2.12 [S]
+[info]   | | +-com.typesafe.play:play-ws-standalone_2.13:2.2.12 [S]
+[info]   | | | +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | | | +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | | 
+[info]   | | | | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | | | | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | | | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | | 
+[info]   | | | | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | | | 
+[info]   | | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | 
+[info]   | | | +-javax.inject:javax.inject:1
+[info]   | | | 
+[info]   | | +-org.scala-lang.modules:scala-xml_2.13:2.2.0 [S]
+[info]   | | 
+[info]   | +-com.typesafe.play:play-ws-standalone_2.13:2.2.12 [S]
+[info]   | | +-com.typesafe.akka:akka-stream_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | | +-com.typesafe.akka:akka-stream_2.13:2.7.1 [S]
+[info]   | | | +-com.typesafe.akka:akka-actor_2.13:2.7.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | +-org.scala-lang.modules:scala-java8-compat_2.13:1.0.0 [S]
+[info]   | | | | 
+[info]   | | | +-com.typesafe.akka:akka-protobuf-v3_2.13:2.7.1
+[info]   | | | +-com.typesafe:ssl-config-core_2.13:0.4.3 (evicted by: 0.6.1)
+[info]   | | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | | +-com.typesafe:config:1.4.5
+[info]   | | | | 
+[info]   | | | +-org.reactivestreams:reactive-streams:1.0.4
+[info]   | | | 
+[info]   | | +-com.typesafe:ssl-config-core_2.13:0.6.1 [S]
+[info]   | | | +-com.typesafe:config:1.4.2 (evicted by: 1.4.5)
+[info]   | | | +-com.typesafe:config:1.4.5
+[info]   | | | 
+[info]   | | +-javax.inject:javax.inject:1
+[info]   | | 
+[info]   | +-com.typesafe.play:play_2.13:2.9.9
+[info]   |   +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: ..
+[info]   |   +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   |   
+[info]   +-com.typesafe.play:play_2.13:2.9.9
+[info]   | +-com.typesafe.akka:akka-actor-typed_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | +-com.typesafe.akka:akka-actor_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | +-com.typesafe.akka:akka-serialization-jackson_2.13:2.6.21 (evicted by: 2...
+[info]   | +-com.typesafe.akka:akka-slf4j_2.13:2.6.21 (evicted by: 2.7.1)
+[info]   | 
+[info]   +-com.typesafe.play:twirl-api_2.13:1.6.10 [S]
+[info]   | +-org.scala-lang.modules:scala-xml_2.13:2.2.0 [S]
+[info]   | 
+[info]   +-org.scala-lang:scala-compiler:2.13.17
+[info]   +-org.slf4j:log4j-over-slf4j:2.0.17
+[info]     +-org.slf4j:slf4j-api:2.0.17
+[info]     
+[success] Total time: 1 s, completed Nov 24, 2025, 1:02:39 PM
