@@ -1,15 +1,15 @@
 # playframework-test
 
 This project contains a simple Play project to learn about
-Play's and Akka structure.
+Play's and Akka structure and dependencies.
 
 ## Notes
 
-At the moment I had to use SBT v1.2.8 because Akka fails somehow.
+I manage to compile and run it using SBT `v1.9.9` and `v1.11.7`.
 
 * Scala 2.13.17
 * Java 17
-* Akka 2.8.8
+* Akka 2.7.1
 * Play 2.7.9
 
 ## Errors
