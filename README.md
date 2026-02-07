@@ -5,16 +5,16 @@ Play's and Akka structure and dependencies.
 
 ## Notes
 
-I manage to compile and run it using SBT `v1.9.9` and `v1.11.7`.
+I manage to compile and run it using SBT `v1.4.9`, `v1.9.9` and `v1.11.7`.
 
-* Scala 2.13.17
-* Java 17
-* Akka 2.7.1
-* Play 2.7.9
+* Scala 2.12.20 and 2.13.17
+* Java 17 (SBT 1.4.9) | 21 (newest SBT 1.11.7)
+* Akka 2.6.21 and 2.7.1
+* Play 2.6.25 and 2.7.9
 
 ## Errors
 
-I finally compiled!!!!!!! It seems that its missing the
+I finally compiled!!!!!!! It seems that it's missing the
 `application.properties` file. This is where I stop.
 
 ```bash
@@ -109,6 +109,7 @@ Posted solution to [Stackoverflow](https://stackoverflow.com/questions/79828037/
 ## Resources
 
 * [Play v2.5.19 docs](https://www.playframework.com/documentation/2.5.x/Home)
+* [Play v2.6.25 docs](https://www.playframework.com/documentation/2.6.x/Home)
 * [Play v2.7.9 docs](https://www.playframework.com/documentation/2.7.x/Home)
 * [Example projects](https://doc.akka.io/libraries/akka-core/current/project/examples.html)
 * [Maven dependencies](https://repo1.maven.org/maven2/)
