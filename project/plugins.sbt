@@ -5,7 +5,7 @@ resolvers += "Maven Central" at "https://repo1.maven.org/maven2"
 // resolvers += Resolver.url("maven-repo")(Patterns("[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"))
 // resolvers += Resolver.url("my-test-repo", url)( Patterns("[organisation]/[module]/[revision]/[artifact].[ext]") )
 
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.6.25") //2.6.25 | 2.8.22 | 2.9.9
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.7.9") //MUST match playVersion in build.sbt | 2.6.25 | 2.8.22 | 2.9.9
 addSbtPlugin("com.typesafe.play" % "sbt-twirl" % "1.6.10") //1.5.2 | 1.6.10
 addSbtPlugin("com.github.sbt" % "sbt-multi-jvm" % "0.6.0")
 addSbtPlugin("com.github.sbt" % "sbt-dynver" % "5.0.1")

@@ -1,0 +1,5 @@
+# Opening java.lang is required by Play 2.7's Guice 4.2 (shaded cglib) on Java 16+.
+# The Play dev server (`sbt run`) executes inside this sbt JVM, so run/javaOptions do not apply here.
+-J--add-opens=java.base/java.lang=ALL-UNNAMED
+# Required by Play 2.7's Assets controller (play.utils.Resources) on Java 16+.
+-J--add-exports=java.base/sun.net.www.protocol.file=ALL-UNNAMED
