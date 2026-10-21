@@ -22,6 +22,7 @@ libraryDependencies ++= Seq(
   // "ch.epfl.scala" % "sbt-bloop_2.12_1.0" % "2.0.16",
   // "com.typesafe.play" % "sbt-twirl_2.12_1.0" % twirlVersion,
   // "com.typesafe.play" % "twirl-api_2.12" % twirlVersion,
+  "org.mongodb" % "mongodb-driver-legacy" % "5.13.0",
 
 //  Testing dependencies
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.1.0" % Test,
