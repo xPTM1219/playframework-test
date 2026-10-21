@@ -5,10 +5,10 @@ Play's and Akka structure and dependencies.
 
 ## Notes
 
-I manage to compile and run it using SBT `v1.4.9`, `v1.9.9` and `v1.11.7`.
+I manage to compile and run it using SBT `v1.13.0`.
 
 * Scala 2.12.20 and 2.13.17
-* Java 17 (SBT 1.4.9) | 21 (newest SBT 1.11.7)
+* Java 17 (SBT 1.13.0)
 * Akka 2.6.21 and 2.7.1
 * Play 2.6.25 and 2.7.9
 
